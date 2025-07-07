@@ -1,5 +1,4 @@
 import React from "react";
-import Figma from "../assets/Figma.webp";
 import { FaCode } from "react-icons/fa";
 
 const services = [
