@@ -1,0 +1,109 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+html,
+body {
+  background: #0a1331;
+  font-family: poppins;
+}
+/* Up and down float */
+@keyframes float-up-down {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+.animate-float-up-down {
+  animation: float-up-down 4s ease-in-out infinite;
+}
+
+/* Left to right float */
+@keyframes float-left-right {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+}
+.animate-float-left-right {
+  animation: float-left-right 5s ease-in-out infinite;
+}
+
+/* Right to left float */
+@keyframes float-right-left {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-15px);
+  }
+}
+.animate-float-right-left {
+  animation: float-right-left 5s ease-in-out infinite;
+}
+
+/* Diagonal (top-left to bottom-right) */
+@keyframes float-diagonal-1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(15px, -15px);
+  }
+}
+.animate-float-diagonal-1 {
+  animation: float-diagonal-1 6s ease-in-out infinite;
+}
+
+/* Diagonal (top-right to bottom-left) */
+@keyframes float-diagonal-2 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-15px, -15px);
+  }
+}
+.animate-float-diagonal-2 {
+  animation: float-diagonal-2 6s ease-in-out infinite;
+}
+
+@keyframes float-rotate {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(30deg);
+  }
+}
+.animate-float-rotate {
+  animation: float-rotate 4s ease-in-out infinite;
+}
+.logo-scroll-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.logo-track {
+  animation: scroll-logos 20s linear infinite;
+  width: max-content;
+}
+
+@keyframes scroll-logos {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
